@@ -55,9 +55,9 @@
       </nav>
     </header>
 
-    <main class="grid grid-cols-[80%_auto] mx-[105px] my-5 p-[18px]">
-      <section>
-        <div class="flex justify-between items-center my-6">
+    <main class="grid grid-cols-[80%_auto] gap-[18px] mx-[105px] my-5 p-[18px]">
+      <section class="rounded-xl bg-[#FFFFFF] p-[18px]">
+        <div class="flex justify-between items-center mb-12">
           <div class="flex items-center gap-4 bg-[#F4F7FF] p-5 rounded-[9px]">
             <div class="bg-[#FFFFFF] p-3 rounded-[50%]">
               <img class="h-6" src="./assets/checkbox.png" alt="" />
@@ -69,10 +69,12 @@
           </div>
 
           <div
-            class="flex items-center p-5 bg-[linear-gradient(78deg,_#3752FD_0%,_#6C7FFA_53%,_#9BA8F8_100%)] rounded-[9px]"
+            class="flex items-center gap-4 p-5 bg-[linear-gradient(78deg,_#3752FD_0%,_#6C7FFA_53%,_#9BA8F8_100%)] rounded-[9px]"
           >
             <img class="h-[59px]" src="./assets/board.png" alt="date board" />
-            <p>Discover Something New Today!</p>
+            <p class="text-[#ffffff] font-medium text-lg">
+              Discover Something New Today!
+            </p>
           </div>
 
           <div class="flex items-center gap-4 bg-[#F4F7FF] p-5 rounded-[9px]">
@@ -281,7 +283,21 @@
         </div>
       </section>
 
-      <section></section>
+      <section class="p-3 bg-[#FFFFFF] rounded-xl">
+        <div class="flex flex-col gap-3 items-center">
+          <div class="flex gap-3 items-center">
+            <img class="h-[18px]" src="./assets/activity.png" alt="" />
+            <p class="font-medium text-base">Activity Log</p>
+          </div>
+          <div>
+            <button
+              class="btn bg-[#3752FD] text-[#ffffff] rounded-lg font-medium text-sm"
+            >
+              Clear History
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
